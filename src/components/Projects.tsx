@@ -38,13 +38,13 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4 relative bg-yellow-400">
+    <section id="projects" className="py-20 px-4 relative bg-gradient-to-br from-amber-50 to-stone-100">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-800">
             Featured Projects
           </h2>
-          <p className="text-gray-800 text-lg max-w-2xl mx-auto">
+          <p className="text-stone-600 text-lg max-w-2xl mx-auto">
             Key projects demonstrating expertise in large-scale systems, distributed architecture, and innovative solutions
           </p>
         </div>
@@ -53,32 +53,32 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className={`group bg-gray-900/90 backdrop-blur-sm border-gray-700 hover:bg-gray-900 transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden ${
+              className={`group bg-white/80 backdrop-blur-sm border-stone-200 hover:bg-white transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden shadow-sm ${
                 project.featured ? 'md:col-span-2 lg:col-span-1' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-yellow-400 text-xl">{project.title}</CardTitle>
+                  <CardTitle className="text-amber-700 text-xl">{project.title}</CardTitle>
                   {project.featured && (
-                    <Badge className="bg-red-500 text-white">
+                    <Badge className="bg-amber-600 text-white">
                       Featured
                     </Badge>
                   )}
                 </div>
-                <p className="text-yellow-300 text-sm">{project.period}</p>
+                <p className="text-amber-600 text-sm">{project.period}</p>
               </CardHeader>
               
               <CardContent className="space-y-4">
-                <p className="text-gray-300 leading-relaxed">{project.description}</p>
+                <p className="text-stone-700 leading-relaxed">{project.description}</p>
                 
                 <div className="space-y-2">
-                  <h4 className="text-yellow-400 font-medium">Key Achievements:</h4>
-                  <ul className="text-gray-300 text-sm space-y-1">
+                  <h4 className="text-amber-700 font-medium">Key Achievements:</h4>
+                  <ul className="text-stone-600 text-sm space-y-1">
                     {project.achievements.map((achievement, idx) => (
                       <li key={idx} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-amber-600 rounded-full"></div>
                         {achievement}
                       </li>
                     ))}
@@ -90,7 +90,7 @@ export const Projects = () => {
                     <Badge 
                       key={tech} 
                       variant="outline" 
-                      className="border-yellow-400/50 text-yellow-300 hover:bg-yellow-400/10"
+                      className="border-amber-300 text-amber-700 hover:bg-amber-50"
                     >
                       {tech}
                     </Badge>
@@ -101,11 +101,6 @@ export const Projects = () => {
           ))}
         </div>
       </div>
-
-      {/* Mondrian geometric elements */}
-      <div className="absolute top-20 left-20 w-24 h-24 bg-red-500 opacity-80"></div>
-      <div className="absolute bottom-20 right-20 w-32 h-16 bg-blue-600 opacity-80"></div>
-      <div className="absolute top-1/2 right-10 w-16 h-32 bg-white opacity-90"></div>
     </section>
   );
 };
