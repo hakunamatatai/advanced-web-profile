@@ -6,7 +6,7 @@ import { Mail, MapPin, Linkedin, Github, ExternalLink, Phone } from "lucide-reac
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-4 relative bg-gradient-to-br from-stone-100 to-amber-50">
+    <section id="contact" className="py-20 px-4 relative bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-800">
@@ -18,15 +18,15 @@ export const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <Card className="bg-white/80 backdrop-blur-sm border-stone-200 hover:bg-white transition-all duration-300 shadow-sm">
+          <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
             <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-stone-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-stone-800 mb-2">Email</h3>
               <p className="text-stone-600 text-sm">evie_chen@outlook.com</p>
               <Button 
-                className="mt-4 bg-amber-600 hover:bg-amber-700 text-white"
+                className="mt-4 bg-stone-600 hover:bg-stone-700 text-white"
                 size="sm"
                 onClick={() => window.open('mailto:evie_chen@outlook.com', '_blank')}
               >
@@ -35,7 +35,7 @@ export const Contact = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/80 backdrop-blur-sm border-stone-200 hover:bg-white transition-all duration-300 shadow-sm">
+          <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-stone-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-6 h-6 text-white" />
@@ -52,9 +52,9 @@ export const Contact = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/80 backdrop-blur-sm border-stone-200 hover:bg-white transition-all duration-300 shadow-sm">
+          <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
             <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-stone-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-stone-800 mb-2">Location</h3>
@@ -87,7 +87,7 @@ export const Contact = () => {
             
             <Button
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white rounded-full p-4 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-amber-500/25"
+              className="bg-stone-600 hover:bg-stone-700 text-white rounded-full p-4 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-stone-500/25"
               onClick={() => window.open('mailto:evie_chen@outlook.com', '_blank')}
             >
               <ExternalLink className="w-6 h-6" />

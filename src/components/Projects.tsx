@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -38,7 +37,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4 relative bg-gradient-to-br from-amber-50 to-stone-100">
+    <section id="projects" className="py-20 px-4 relative bg-gradient-to-br from-stone-100 to-stone-200">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-800">
@@ -53,32 +52,32 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className={`group bg-white/80 backdrop-blur-sm border-stone-200 hover:bg-white transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden shadow-sm ${
+              className={`group bg-white/90 backdrop-blur-sm border-stone-300 hover:bg-white transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden shadow-md ${
                 project.featured ? 'md:col-span-2 lg:col-span-1' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-amber-700 text-xl">{project.title}</CardTitle>
+                  <CardTitle className="text-stone-800 text-xl">{project.title}</CardTitle>
                   {project.featured && (
-                    <Badge className="bg-amber-600 text-white">
+                    <Badge className="bg-stone-600 text-white">
                       Featured
                     </Badge>
                   )}
                 </div>
-                <p className="text-amber-600 text-sm">{project.period}</p>
+                <p className="text-stone-600 text-sm">{project.period}</p>
               </CardHeader>
               
               <CardContent className="space-y-4">
                 <p className="text-stone-700 leading-relaxed">{project.description}</p>
                 
                 <div className="space-y-2">
-                  <h4 className="text-amber-700 font-medium">Key Achievements:</h4>
+                  <h4 className="text-stone-800 font-medium">Key Achievements:</h4>
                   <ul className="text-stone-600 text-sm space-y-1">
                     {project.achievements.map((achievement, idx) => (
                       <li key={idx} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-amber-600 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-stone-600 rounded-full"></div>
                         {achievement}
                       </li>
                     ))}
@@ -90,7 +89,7 @@ export const Projects = () => {
                     <Badge 
                       key={tech} 
                       variant="outline" 
-                      className="border-amber-300 text-amber-700 hover:bg-amber-50"
+                      className="border-stone-400 text-stone-700 hover:bg-stone-100"
                     >
                       {tech}
                     </Badge>

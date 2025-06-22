@@ -1,10 +1,9 @@
-
 import { ArrowDown, Code, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative bg-gradient-to-br from-amber-50 to-stone-100">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-4 pt-16 relative bg-gradient-to-br from-amber-50 to-yellow-50">
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <div className="mb-8 animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-stone-200 shadow-sm">
