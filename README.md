@@ -2,14 +2,14 @@
 
 ## Project info
 
-**project URL**: https://lovable.dev/projects/13156684-8234-45a2-a520-28549682a030
+** URL**: https://hakunamatatai.github.io/advanced-web-profile/
 
-## How can I edit this code?
 
-There are several ways of editing your application.
 
-**Use Lovable**
-# https://lovable.dev/projects/13156684-8234-45a2-a520-28549682a030
+There are several ways of editing the application.
+
+** Use Lovable**
+** https://lovable.dev/projects/13156684-8234-45a2-a520-28549682a030
 
 Changes made via Lovable will be committed automatically to this repo.
 
