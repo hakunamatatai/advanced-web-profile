@@ -31,13 +31,13 @@ const skillCategories = [
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-20 px-4 relative bg-white">
+    <section id="skills" className="py-20 px-6 relative bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-800">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 tracking-tight">
             Technical Skills
           </h2>
-          <p className="text-stone-600 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto font-light">
             A comprehensive toolkit built through 5+ years of hands-on experience and continuous learning
           </p>
         </div>
@@ -46,17 +46,17 @@ export const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={category.title} 
-              className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 hover:scale-105 animate-fade-in shadow-sm"
+              className="bg-white/80 backdrop-blur-sm border-gray-200 hover:bg-white transition-all duration-300 hover:scale-105 animate-fade-in shadow-sm hover:shadow-md"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-stone-800 mb-4">{category.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
                     <Badge 
                       key={skill} 
                       variant="secondary" 
-                      className="bg-white text-stone-700 hover:bg-stone-100 transition-colors border-stone-200"
+                      className="bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors border-0 font-medium"
                     >
                       {skill}
                     </Badge>

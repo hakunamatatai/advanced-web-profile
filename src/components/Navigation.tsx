@@ -7,10 +7,10 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "首页", href: "#hero" },
-    { name: "技能", href: "#skills" },
-    { name: "项目", href: "#projects" },
-    { name: "联系", href: "#contact" },
+    { name: "Home", href: "#hero" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -22,10 +22,10 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-stone-200 z-50">
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50 shadow-sm">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="font-bold text-xl text-stone-800">
+          <div className="font-bold text-xl text-gray-900">
             CICI Chen
           </div>
           
@@ -35,7 +35,7 @@ export const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-stone-600 hover:text-stone-800 transition-colors font-medium"
+                className="text-gray-600 hover:text-gray-900 transition-colors font-medium text-sm tracking-wide"
               >
                 {item.name}
               </button>
@@ -55,13 +55,13 @@ export const Navigation = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-stone-200">
+          <div className="md:hidden bg-white border-t border-gray-100">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-4 py-2 text-stone-600 hover:text-stone-800 hover:bg-stone-50 transition-colors"
+                  className="block w-full text-left px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors"
                 >
                   {item.name}
                 </button>
