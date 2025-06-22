@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: '/advanced-web-profile/', // same as repo name
   plugins: [
     react(),
     mode === 'development' &&
