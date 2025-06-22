@@ -55,13 +55,13 @@ export const Navigation = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-stone-200">
+          <div className="md:hidden bg-white border-t border-gray-100">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-4 py-2 text-stone-600 hover:text-stone-800 hover:bg-stone-50 transition-colors"
+                  className="block w-full text-left px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors"
                 >
                   {item.name}
                 </button>

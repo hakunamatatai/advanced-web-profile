@@ -1,3 +1,4 @@
+
 import { ArrowDown, Code, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -28,7 +29,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in">
           <Button 
             className="bg-amber-400 text-white hover:bg-amber-800 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
@@ -39,7 +40,7 @@ export const Hero = () => {
           
           <Button 
             variant="outline" 
-            className="border-stone-300 text-stone-700 hover:bg-stone-50 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+            className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 font-medium text-base"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Get In Touch
@@ -48,7 +49,7 @@ export const Hero = () => {
 
         <div className="animate-bounce">
           <ArrowDown 
-            className="w-6 h-6 text-stone-500 mx-auto cursor-pointer hover:text-stone-600 transition-colors"
+            className="w-6 h-6 text-gray-400 mx-auto cursor-pointer hover:text-gray-600 transition-colors"
             onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
           />
         </div>
