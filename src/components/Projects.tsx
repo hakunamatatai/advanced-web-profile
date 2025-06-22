@@ -6,30 +6,30 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     title: "Meituan Smart Logistics Platform",
-    description: "Led and delivered Meituan's first smart logistics project as Project Manager, managing 20 microservices and coordinating 60+ team members. Improved ramp-up times by 10% and reduced timelines by 5%.",
-    technologies: ["Java", "Spring Boot", "Microservices", "Kubernetes", "Project Management"],
+    description: "AGV smart logistics development: self-driving, unmanned vehicle that transports pallets, totes, cartons or full racks from point A to B along a pre-defined route.",
+    technologies: ["Java", "Spring Boot", "Microservices", "Kubernetes", "IoT", "Project Management"],
     period: "Sep 2023 - July 2024",
-    achievements: ["Managed 20 microservices", "Coordinated 60+ team members", "10% improvement in ramp-up times"],
+    achievements: ["Managed 20 microservices", "Coordinated 60+ team members", "Pushbished in one month"],
     featured: true
   },
   {
-    title: "Large-Scale Distributed Systems",
-    description: "Designed and implemented 3 large-scale distributed software systems from the ground up, operational across over 100 cities in China, enabling 24-hour product delivery.",
-    technologies: ["Java", "Distributed Systems", "Spring Boot", "MySQL", "Redis"],
+    title: "E-commerce logistics system",
+    description: "Designed and implemented distributed software systems from the ground up",
+    technologies: ["Java", "Spring Boot", "MySQL", "Redis", "Docker", "Kubernetes", "Kafka"],
     period: "Nov 2020 - Sep 2023",
-    achievements: ["Operational across 100+ cities", "24-hour product delivery", "60% workflow optimization"]
+    achievements: ["Operational across 100+ cities in China", "24-hour product delivery", "High Concurrency Support"]
   },
   {
-    title: "Full-Stack Analytics System",
-    description: "Implemented a comprehensive analytics system with specialized algorithms, calibration features, and web socket connections. Enhanced system performance by 30% through refactoring and multithreading improvements.",
-    technologies: ["Spring", "WebSockets", "JavaScript", "RESTful API", "Tomcat"],
+    title: "Full-Stack Web Application",
+    description: "Implemented a comprehensive analytics system with specialized algorithms, calibration features",
+    technologies: ["C++", "Python", "React", "RESTful API", "HTML", "CSS"],
     period: "May 2019 - Dec 2019",
-    achievements: ["30% performance enhancement", "Real-time analytics", "Multithreading optimization"]
+    achievements: ["Real-time analytics", "Multithreading optimization"]
   },
   {
     title: "Mobile Robot Motion Planning Algorithm",
-    description: "Designed an innovative algorithm achieving 90% collision-free rate for mobile robot motion planning in dynamic environments. Published research paper at IEEE 2015 conference.",
-    technologies: ["Python", "Algorithm Design", "Machine Learning", "Research"],
+    description: "Designed an innovative algorithm achieving 90% collision-free rate for mobile robot motion planning in dynamic environments",
+    technologies: ["C++", "Algorithm Design", "Research"],
     period: "May 2013 - April 2015",
     achievements: ["90% collision-free rate", "IEEE publication", "Innovation in robotics"]
   }
@@ -41,18 +41,18 @@ export const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-800">
-            Featured Projects
+            Projects
           </h2>
-          <p className="text-stone-600 text-lg max-w-2xl mx-auto">
+          {/* <p className="text-stone-600 text-lg max-w-2xl mx-auto font-bold">
             Key projects demonstrating expertise in large-scale systems, distributed architecture, and innovative solutions
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className={`group bg-white/90 backdrop-blur-sm border-stone-300 hover:bg-white transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden shadow-md ${
+              className={`group bg-zinc-300 backdrop-blur-sm border-stone-300 hover:bg-white transition-all duration-500 hover:scale-105 animate-fade-in overflow-hidden shadow-md ${
                 project.featured ? 'md:col-span-2 lg:col-span-1' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}

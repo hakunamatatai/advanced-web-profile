@@ -6,18 +6,18 @@ import { Mail, MapPin, Linkedin, Github, ExternalLink, Phone } from "lucide-reac
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-4 relative bg-white">
-      <div className="max-w-4xl mx-auto">
+    <section id="contact" className="py-20 px-4 bg-gray-800">
+      <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-800">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Let's Connect
           </h2>
-          <p className="text-stone-600 text-lg max-w-2xl mx-auto">
+          {/* <p className="text-stone-600 text-lg max-w-2xl mx-auto">
             Open to discussing new opportunities, collaborations, or just having a chat about technology
-          </p>
+          </p> */}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-">
           <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-stone-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -35,7 +35,7 @@ export const Contact = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
+          {/* <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-stone-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-6 h-6 text-white" />
@@ -50,7 +50,7 @@ export const Contact = () => {
                 Call Me
               </Button>
             </CardContent>
-          </Card>
+          </Card> */}
 
           <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
             <CardContent className="p-6 text-center">
@@ -59,9 +59,9 @@ export const Contact = () => {
               </div>
               <h3 className="text-xl font-semibold text-stone-800 mb-2">Location</h3>
               <p className="text-stone-600 text-sm">Melbourne, VIC, Australia</p>
-              <Badge className="mt-4 bg-green-100 text-green-700 border-green-200">
+              {/* <Badge className="mt-4 bg-green-100 text-green-700 border-green-200">
                 Available for Opportunities
-              </Badge>
+              </Badge> */}
             </CardContent>
           </Card>
         </div>
@@ -80,7 +80,7 @@ export const Contact = () => {
             <Button
               size="lg"
               className="bg-stone-800 hover:bg-stone-900 text-white rounded-full p-4 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-stone-500/25"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://github.com/hakunamatatai', '_blank')}
             >
               <Github className="w-6 h-6" />
             </Button>
@@ -95,7 +95,7 @@ export const Contact = () => {
           </div>
           
           <p className="text-stone-500 mt-8 text-sm">
-            © 2024 CICI (Yuchang) Chen. Senior Software Engineer Portfolio.
+            © 2024 CICI
           </p>
         </div>
       </div>

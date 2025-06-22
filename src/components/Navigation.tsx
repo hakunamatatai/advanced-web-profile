@@ -7,10 +7,10 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "首页", href: "#hero" },
-    { name: "技能", href: "#skills" },
-    { name: "项目", href: "#projects" },
-    { name: "联系", href: "#contact" },
+    { name: "Home", href: "#hero" },
+    { name: "Tech Skill", href: "#skills" },
+    { name: "Project", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -22,20 +22,20 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-stone-200 z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-Amber-800 backdrop-blur-sm z-50">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <div className="font-bold text-xl text-stone-800">
+        <div className="flex items-center justify-center h-16">
+          {/* <div className="font-bold text-xl text-stone-800">
             CICI Chen
-          </div>
+          </div> */}
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-40">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-stone-600 hover:text-stone-800 transition-colors font-medium"
+                className="text-xl text-stone-400 hover:text-stone-200 transition-colors font-medium font-bold"
               >
                 {item.name}
               </button>
