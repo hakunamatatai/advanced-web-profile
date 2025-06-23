@@ -185,7 +185,7 @@ const skills = [
       { icon: <SiJavascript className="text-yellow-400" />, name: "Javascript" },
       { icon: <SiTypescript className="text-blue-500" />, name: "Typescript" },
       { icon: <SiReact className="text-cyan-400" />, name: "React" },
-      { icon: <SiNextdotjs className="text-gray-100" />, name: "Next.Js" },
+      // { icon: <SiNextdotjs className="text-gray-100" />, name: "Next.Js" },
       { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind CSS" },
     ],
   },
@@ -222,6 +222,7 @@ const skills = [
   },
 ];
 
+
 export default function Skills() {
   return (
     <section className="min-h-screen bg-[#232323] py-20 px-4 flex flex-col items-center">
@@ -230,13 +231,13 @@ export default function Skills() {
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-300 mb-20 tracking-wide">
           Tech Skills
         </h2>
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row">
           {/* 左侧大类 */}
-          <div className="flex flex-col items-start w-60 mr-60">
+          <div className="w-full md:w-60 md:mr-60 flex flex-row md:flex-col items-start md:items-start mb-8 md:mb-0">
             {skills.map((group, idx) => (
               <div
                 key={group.category}
-                className={`mb-32 text-4xl font-extrabold text-gray-500 tracking-wider`}
+                className={`mb-8 md:mb-32 text-xl md:text-4xl font-extrabold text-gray-500 tracking-wider`}
                 style={{ letterSpacing: "0.05em" }}
               >
                 {group.category}
@@ -248,15 +249,15 @@ export default function Skills() {
             {skills.map((group) => (
               <div
                 key={group.category}
-                className="mb-20 flex flex-wrap gap-x-8 gap-y-6"
+                className="mb-10 md:mb-20 flex flex-wrap gap-x-4 md:gap-x-8 gap-y-4 md:gap-y-6"
               >
                 {group.items.map(({ icon, name }) => (
                   <div
                     key={name}
-                    className="flex items-center gap-2 min-w-[160px]"
+                    className="flex items-center gap-2 min-w-[120px] md:min-w-[160px]"
                   >
-                    <span className="text-3xl">{icon}</span>
-                    <span className="text-2xl text-gray-100">{name}</span>
+                    <span className="text-xl md:text-3xl">{icon}</span>
+                    <span className="text-base md:text-2xl text-gray-100">{name}</span>
                   </div>
                 ))}
               </div>
