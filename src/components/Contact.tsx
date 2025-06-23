@@ -18,7 +18,7 @@ export const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-">
-          <Card className="bg-stone-50/80 backdrop-blur-sm border-stone-200 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
+          <Card className="bg-stone-400/80 backdrop-blur-sm border-white/20 hover:bg-stone-100/80 transition-all duration-300 shadow-sm">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-6 h-6 text-white" />
@@ -52,13 +52,13 @@ export const Contact = () => {
             </CardContent>
           </Card> */}
 
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 shadow-lg">
+          <Card className="bg-stone-400/80 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 shadow-lg">
             <CardContent className="p-6 text-center">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-stone-800 mb-2">Location</h3>
-              <p className="text-stone-600 text-sm">Melbourne, VIC, Australia</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Location</h3>
+              <p className="text-stone-300 text-sm">Melbourne, VIC, Australia</p>
               {/* <Badge className="mt-4 bg-green-100 text-green-700 border-green-200">
                 Available for Opportunities
               </Badge> */}
@@ -66,9 +66,9 @@ export const Contact = () => {
           </Card>
         </div>
 
-        <div className="text-center">
-          <h3 className="text-2xl font-semibold text-white mb-8">Find me on</h3>
-          <div className="flex justify-center gap-6">
+        <div className="text-center mt-16">
+          <h3 className="text-2xl font-semibold text-white mb-12">Find me on</h3>
+          <div className="flex justify-center gap-10">
             <Button
               size="lg"
               className="bg-[#0077B5] hover:bg-[#005885] text-white rounded-full p-4 transition-all duration-300 hover:scale-110 shadow-lg"
